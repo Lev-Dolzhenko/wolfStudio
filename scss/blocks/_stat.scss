@@ -24,3 +24,17 @@
     bottom: 5vw;
     transform: translateX(-50%);
 }
+
+@include mediaPhone {
+    .stat {
+        padding: 80px 0;
+    }
+
+    .stat__row {
+        margin-top: 73px;
+    }
+
+    .stat__row__block {
+        padding: 5px 0 17px;
+    }
+}

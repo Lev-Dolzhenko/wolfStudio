@@ -5,7 +5,7 @@
 }
 
 
-@mixin semiTablet {
+@mixin mediaSemiTablet {
     @media screen and (max-width: $semiTablet) {
         @content
     }

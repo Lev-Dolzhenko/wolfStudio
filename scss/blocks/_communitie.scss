@@ -1,0 +1,55 @@
+.communitie {
+    padding-top: 120px;
+}
+.container {
+}
+
+.communitie__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+    margin-top: 50px;
+}
+
+.communitie__row__elem {
+    position: relative;
+
+    border: 2px solid $colorActive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+
+    padding: 26px 0;
+
+    img {
+        width: clamp(37px, 5vw, 100px);
+    }
+
+    transition: background-color 0.2s linear;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $colorActive;
+    }
+}
+
+
+
+@include mediaSemiTablet {
+    .communitie__row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@include mediaPhone {
+    .communitie__row {
+        margin-top: 15px;
+    }
+
+    .communitie__row__elem {
+        padding: 13px 0;
+    }
+}
