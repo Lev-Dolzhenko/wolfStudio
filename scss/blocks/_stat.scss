@@ -1,0 +1,26 @@
+.stat {
+    position: relative;
+
+    padding: 105px 0 121px;
+}
+
+.stat__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+    column-gap: 30px;
+    row-gap: 15px;
+
+    margin-top: 96px;
+}
+
+.stat__row__block {
+    padding: 31px 0 31px;
+    border: 2px solid var(--Opacity2, rgba(146, 115, 152, 0.50));;
+}
+
+.stat__arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 5vw;
+    transform: translateX(-50%);
+}
