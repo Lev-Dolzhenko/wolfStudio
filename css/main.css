@@ -178,7 +178,6 @@ a {
   text-align: center;
   margin-top: 30px;
 }
-
 .titleH5 {
   font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
   color: #fff;
@@ -474,6 +473,110 @@ a {
   }
   .communitie__row__elem {
     padding: 13px 0;
+  }
+}
+.support {
+  padding: 120px 0;
+}
+
+.support__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.support__row__element__image {
+  height: 176px;
+  background-color: #3B2341;
+}
+.support__row__element__image img {
+  padding: 38px 0;
+}
+
+.support__row__element__text {
+  height: 85px;
+  background-color: #503655;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.support__row__element__image,
+.support__row__element__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .support {
+    padding: 80px 0;
+  }
+  .support__row__element__image {
+    height: 160px;
+  }
+  .support__row__element__image img {
+    padding: 0px 0 0 px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .support__row__element__image {
+    height: 102px;
+    padding: 12px 14px;
+  }
+  .support__row__element__image img {
+    width: 63px;
+  }
+  .support__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+  .support__row__element {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 76px 1fr;
+    grid-template-columns: 76px 1fr;
+  }
+  .support__row__element__text {
+    height: 100%;
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 320px) {
+  .support__row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+  .support__row__element {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 76px 1fr;
+    grid-template-columns: 76px 1fr;
+  }
+  .support__row__element__text {
+    height: 100%;
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .support__row__element__image img {
+    width: 48px;
+    padding: 12px 0;
   }
 }
 /* BLOCK */
